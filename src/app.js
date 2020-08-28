@@ -3,7 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
-const devPort = 30001;
+const port = process.env.PORT || 30001;
 
 const app = express();
 
@@ -103,7 +103,7 @@ app.get('*', (request, response) =>
     });
 });
 
-app.listen(devPort, () =>
+app.listen(port, () =>
 {
-    console.log(`Server is up on port ${devPort}.`);
+    console.log(`Server is up on port ${port}.`);
 });
