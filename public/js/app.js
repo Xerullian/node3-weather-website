@@ -29,7 +29,8 @@ weatherForm.addEventListener('submit', (event) =>
 
         message2.innerHTML = 
         ` <p class="p-verticalmargin-zero">${data.forecast.description}
-          <p class="p-verticalmargin-zero">Temperature: ${data.forecast.temperature}
+          <p class="p-verticalmargin-zero">Current Temperature: ${data.forecast.temperature}
+          <p class="p-verticalmargin-zero">Feels like: ${data.forecast.temp_feels_like}
           <p class="p-verticalmargin-zero">Chance of rain: ${data.forecast.rain_probability}
         `;
       }

@@ -22,6 +22,7 @@ const forecast = ( latitude, longitude, callback) =>
             {
                 description: currentWeather.weather_descriptions[0],
                 temperature: currentWeather.temperature,
+                temp_feels_like: currentWeather.feelslike,
                 rain_probability: currentWeather.precip
             })
         }
